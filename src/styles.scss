@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+$black: #12161a;
+$jade: #00FFAA;
+$yellow: #ffe401;
+$white: #ffffff;
+:root {
+    --black: #12161a;
+    --jade: #00FFAA;
+    --yellow: #ffe401;
+    --white: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body,
+html {
+    background-color: $black;
+    color: $white;
+}

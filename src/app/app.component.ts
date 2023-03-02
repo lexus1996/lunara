@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'lunara';
+  count: number = 0;
+  countUp() {
+    this.count++;
+  } 
 }
+
