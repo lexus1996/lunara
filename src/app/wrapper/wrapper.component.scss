@@ -1,0 +1,144 @@
+#moon-img {
+    position: absolute;
+    max-width: 100px;
+    top: 45%;
+    left: -100px;
+    animation: moon-anim 5s infinite;
+    z-index: 2;
+}
+
+.starry-night img {
+    position: absolute;
+    max-width: 20px;
+    animation: size-pulse-odd-anim 5s infinite;
+    z-index: 1;
+}
+
+.starry-night img:nth-child(odd) {
+    animation: size-pulse-odd-anim 5s infinite;
+}
+
+.starry-night img:nth-child(even) {
+    animation: size-pulse-even-anim 5s infinite;
+}
+
+.starry-night {
+    img:nth-child(1) {
+        top: 20%;
+        left: 20%;
+    }
+    img:nth-child(2) {
+        top: 32%;
+        left: 30%;
+    }
+    img:nth-child(3) {
+        top: 16%;
+        left: 42%;
+    }
+    img:nth-child(4) {
+        top: 46%;
+        left: 52%;
+    }
+    img:nth-child(5) {
+        top: 12%;
+        left: 6%;
+    }
+    img:nth-child(6) {
+        top: 36%;
+        left: 62%;
+    }
+    img:nth-child(7) {
+        top: 22%;
+        left: 68%;
+    }
+    img:nth-child(8) {
+        top: 10%;
+        left: 82%;
+    }
+    img:nth-child(9) {
+        top: 26%;
+        left: 88%;
+    }
+    img:nth-child(10) {
+        top: 36%;
+        left: 94%;
+    }
+}
+
+.wrapper-section {
+    min-height: 90vh;
+    max-width: 100vw;
+}
+
+
+/*ANIMATIONS*/
+
+@keyframes size-pulse-odd-anim {
+    0% {
+        transform: scale(1) rotate(0deg);
+        filter: drop-shadow(0 0px 2px var(--yellow));
+    }
+    33% {
+        transform: scale(.8) rotate(15deg);
+        filter: drop-shadow(0 0px 32px var(--yellow));
+    }
+    66% {
+        transform: scale(1.2) rotate(-15deg);
+        filter: drop-shadow(0 0px 32px var(--yellow));
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        filter: drop-shadow(0 0px 2px var(--yellow));
+    }
+}
+
+@keyframes size-pulse-even-anim {
+    0% {
+        transform: scale(1) rotate(0deg);
+        filter: drop-shadow(0 0px 2px var(--jade));
+    }
+    33% {
+        transform: scale(1.2) rotate(-25deg);
+        filter: drop-shadow(0 0px 24px var(--jade));
+    }
+    66% {
+        transform: scale(.8) rotate(25deg);
+        filter: drop-shadow(0 0px 16px var(--jade));
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        filter: drop-shadow(0 0px 2px var(--jade));
+    }
+}
+
+@keyframes moon-anim {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-100%) rotate(30deg);
+    }
+    50% {
+        transform: translateY(-50%) rotate(60deg);
+    }
+    75% {
+        transform: translate(0) rotate(90deg);
+    }
+    100% {
+        left: 105%;
+    }
+}
+
+
+/*Desktop queries*/
+
+@media (min-width: 1280px) {
+    #moon-img {
+        position: absolute;
+        max-width: 200px;
+        top: 35%;
+        left: -200px;
+        animation: moon-anim 80s infinite;
+        z-index: 2;
+    }
+}
