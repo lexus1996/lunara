@@ -1,15 +1,13 @@
 <section class="header-section">
     <div class="header">
         <img src="\assets\Images\logo-lunara.png" class="logo">
-        <div class="hamburger-menu" [class.active-hamburger-menu]="isVisited == true" (click)="checkVisited()">
+        <div class="hamburger-menu" [class.active-hamburger-menu]="hamburger == true" (click)="checkVisited()">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
-    <div class="menu-items" [class.is-visible]="isVisited == true">
-        <div class="menu-item" *ngFor="let route of routes" [routerLink]="route.path" (click)="checkVisited()">{{route.name}}</div>
-        <i class="d-block fa-brands fa-instagram"></i>
-    </div>
+    <app-menu *ngIf="isVisited" [menuUpdated]="isVisited" (closeMenuEmitter)="closeMenu($event)"></app-menu>
+
 </section>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,34 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
-  routes = [
-    {
-      path: "home",
-      name: "Home"
-    },
-    {
-      path: "contact",
-      name: "Contact"
-    },
-    {
-      path: "about",
-      name: "About"
-    },
-    {
-      path: "services-page",
-      name: "Services"
-    }
-  ]
-
-
+  constructor(private cd: ChangeDetectorRef) { }
 
   public isVisited: boolean = false;
-  elementOpacity = 0;
   public checkVisited() {
+    debugger
     this.isVisited = !this.isVisited;
-    this.elementOpacity = 1;
+    this.hamburger = !this.hamburger;
+    this.isVisited = JSON.parse(JSON.stringify(this.isVisited));
+    this.cd.detectChanges();
+  }
+
+
+  hamburger = false;
+  closeMenu(event: string) {
+    if (event == "hamburger") {
+      this.hamburger = false;
+      return
+    }
+    this.isVisited = false;
   }
 
   ngAfterViewInit() {
