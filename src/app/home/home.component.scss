@@ -1,9 +1,98 @@
-h1 {
-    transform: translate(50px, 50px);
-    transition: 2s;
+.home-section {
+    min-height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    padding: 25px;
 }
 
-.test-text {
-    transform: translate(0, 0);
-    transition: 2s all;
+.home-hero-section {
+    transition: 2s;
+    .title {
+        transition: 2s;
+        animation: title-anim 1s forwards;
+    }
+    .sub-title {
+        transition: 2s;
+        animation: subtitle-anim 1s forwards;
+    }
+    .small-separator {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 10px auto;
+        width: 100px;
+        height: 6px;
+        background-color: var(--yellow);
+        top: -20px;
+    }
+    .small-separator:nth-child(1) {
+        background-color: var(--jade);
+        animation: small-separator-1-anim .8s forwards;
+    }
+    .small-separator:nth-child(2) {
+        animation: small-separator-2-anim .8s forwards;
+    }
+    .arrow-icon {
+        animation: arrow-icon-anim 2s infinite;
+    }
 }
+
+@keyframes title-anim {
+    from {
+        transform: translateX(-800px) scale(0.4);
+    }
+    to {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes subtitle-anim {
+    from {
+        transform: translateX(800px) scale(0.4);
+    }
+    to {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes small-separator-1-anim {
+    from {
+        transform: translate(-500px);
+    }
+    to {
+        transform: translate(-50%);
+    }
+}
+
+@keyframes small-separator-2-anim {
+    from {
+        transform: translate(500px);
+    }
+    to {
+        transform: translate(-50%);
+    }
+}
+
+@keyframes arrow-icon-anim {
+    0% {
+        opacity: .3;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: .8;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: .3;
+        transform: translateY(20px);
+    }
+}
+
+
+/*Desktop queries*/
+
+@media (min-width: 1280px) {}

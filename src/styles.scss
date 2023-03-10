@@ -81,3 +81,61 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.title {
+    font-size: 2.8rem;
+    margin: 10px auto;
+    font-weight: 600;
+}
+
+.sub-title {
+    font-size: 1.8rem;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.yellow-text {
+    color: $yellow;
+}
+
+.jade-text {
+    color: $jade;
+}
+
+.black-text {
+    color: $black;
+}
+
+.white-text {
+    color: $white;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3.5rem;
+        margin: 10px auto;
+        font-weight: 600;
+    }
+    .sub-title {
+        font-size: 2rem;
+        margin: 10px auto;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1280px) {
+    .title {
+        font-size: 4.5rem;
+        margin: 10px auto;
+        font-weight: 600;
+    }
+    .sub-title {
+        font-size: 2.5rem;
+        margin: 10px auto;
+        font-weight: 400;
+    }
+}

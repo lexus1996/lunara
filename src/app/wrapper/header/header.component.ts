@@ -11,7 +11,6 @@ export class HeaderComponent implements OnInit {
 
   public isVisited: boolean = false;
   public checkVisited() {
-    debugger
     this.isVisited = !this.isVisited;
     this.hamburger = !this.hamburger;
     this.isVisited = JSON.parse(JSON.stringify(this.isVisited));

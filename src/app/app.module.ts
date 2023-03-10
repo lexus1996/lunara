@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
@@ -11,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesPageComponent } from './services-page/services-page.component';
 import { MenuComponent } from './wrapper/header/menu/menu.component';
+import { OpenCloseComponent } from './open-close/open-close.component';
 
 
 @NgModule({
@@ -24,10 +26,12 @@ import { MenuComponent } from './wrapper/header/menu/menu.component';
     AboutComponent,
     ServicesPageComponent,
     MenuComponent,
-    
+    OpenCloseComponent,
+
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
