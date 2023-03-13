@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import Aos from 'aos';
 
 @Component({
@@ -7,11 +7,13 @@ import Aos from 'aos';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  @ViewChild('sarmale') sarmale: ElementRef | undefined;
   constructor() { }
 
   ngOnInit(): void {
     Aos.init()
+
   }
+
 
 }
