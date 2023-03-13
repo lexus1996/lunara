@@ -1,11 +1,13 @@
 <section class="header-section">
-    <div class="header">
-        <img src="\assets\Images\logo-lunara.png" class="logo">
-        <div class="hamburger-menu" [class.active-hamburger-menu]="hamburger == true" (click)="checkVisited()">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="header-wrapper">
+        <div class="header">
+            <img src="\assets\Images\logo-lunara.png" class="logo">
+            <div class="hamburger-menu" [class.active-hamburger-menu]="hamburger == true" (click)="checkVisited()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
     <app-menu *ngIf="isVisited" [menuUpdated]="isVisited" (closeMenuEmitter)="closeMenu($event)"></app-menu>
