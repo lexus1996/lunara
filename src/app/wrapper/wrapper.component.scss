@@ -1,10 +1,14 @@
 #moon-img {
     position: absolute;
     max-width: 100px;
-    top: 10%;
+    top: 3%;
     left: -100px;
     animation: moon-anim 15s infinite;
     z-index: 2;
+}
+
+.starry-night {
+    max-height: 100vh;
 }
 
 .starry-night img {
@@ -24,43 +28,45 @@
 
 .starry-night {
     img:nth-child(1) {
-        top: 20%;
+        top: 2%;
         left: 20%;
     }
     img:nth-child(2) {
-        top: 32%;
+        top: 3%;
         left: 30%;
+        display: none;
     }
     img:nth-child(3) {
-        top: 16%;
+        top: 2.5%;
         left: 42%;
     }
     img:nth-child(4) {
-        top: 46%;
+        top: 1%;
         left: 52%;
     }
     img:nth-child(5) {
-        top: 12%;
+        top: 3%;
         left: 6%;
     }
     img:nth-child(6) {
-        top: 36%;
+        top: 2%;
         left: 62%;
+        display: none;
     }
     img:nth-child(7) {
-        top: 22%;
+        top: 2%;
         left: 68%;
     }
     img:nth-child(8) {
-        top: 10%;
+        top: 3%;
         left: 82%;
     }
     img:nth-child(9) {
-        top: 26%;
+        top: 2%;
         left: 88%;
     }
     img:nth-child(10) {
-        top: 36%;
+        top: 1%;
         left: 94%;
     }
 }
@@ -127,11 +133,66 @@
 
 /*Desktop queries*/
 
+@media (min-width: 768px) {
+    #moon-img {
+        position: absolute;
+        max-width: 200px;
+        top: 3%;
+        left: -200px;
+        animation: moon-anim 25s infinite;
+        z-index: 2;
+    }
+    .starry-night {
+        img:nth-child(1) {
+            top: 2%;
+            left: 20%;
+        }
+        img:nth-child(2) {
+            top: 6%;
+            left: 30%;
+            display: block;
+        }
+        img:nth-child(3) {
+            top: 3%;
+            left: 42%;
+        }
+        img:nth-child(4) {
+            top: 4%;
+            left: 52%;
+        }
+        img:nth-child(5) {
+            top: 3%;
+            left: 6%;
+        }
+        img:nth-child(6) {
+            top: 6%;
+            left: 62%;
+            display: block;
+        }
+        img:nth-child(7) {
+            top: 5%;
+            left: 68%;
+        }
+        img:nth-child(8) {
+            top: 4%;
+            left: 82%;
+        }
+        img:nth-child(9) {
+            top: 5%;
+            left: 88%;
+        }
+        img:nth-child(10) {
+            top: 6%;
+            left: 94%;
+        }
+    }
+}
+
 @media (min-width: 1280px) {
     #moon-img {
         position: absolute;
         max-width: 200px;
-        top: 5%;
+        top: 6%;
         left: -200px;
         animation: moon-anim 25s infinite;
         z-index: 2;

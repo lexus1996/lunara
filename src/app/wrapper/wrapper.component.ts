@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WrapperComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
+
+  bgImgLink: string = "url('assets\Images\main-background-lunara.png')";
+
+
 
   ngOnInit(): void {
   }
