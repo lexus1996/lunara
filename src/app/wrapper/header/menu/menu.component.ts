@@ -23,7 +23,7 @@ export class MenuComponent implements OnInit {
 
   routes = [
     {
-      path: "home",
+      path: "",
       name: "Home"
     },
     {
