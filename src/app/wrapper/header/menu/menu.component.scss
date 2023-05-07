@@ -54,6 +54,11 @@
     opacity: 0;
 }
 
+.menu-item:nth-child(5) {
+    transform: translateY(-150px) scale(2);
+    opacity: 0;
+}
+
 .is-visible {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.8);
@@ -71,6 +76,10 @@
         opacity: 1;
     }
     .menu-item:nth-child(4) {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+    .menu-item:nth-child(5) {
         transform: translateY(0px) scale(1);
         opacity: 1;
     }

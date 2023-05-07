@@ -1,7 +1,7 @@
 #moon-img {
     position: absolute;
     max-width: 100px;
-    top: 3%;
+    top: 150px;
     left: -100px;
     animation: moon-anim 15s infinite;
     z-index: 2;
@@ -28,45 +28,44 @@
 
 .starry-night {
     img:nth-child(1) {
-        top: 2%;
+        top: 150px;
         left: 20%;
     }
     img:nth-child(2) {
-        top: 3%;
+        top: 180px;
         left: 30%;
         display: none;
     }
     img:nth-child(3) {
-        top: 2.5%;
+        top: 130px;
         left: 42%;
     }
     img:nth-child(4) {
-        top: 1%;
+        top: 160px;
         left: 52%;
     }
     img:nth-child(5) {
-        top: 3%;
+        top: 130px;
         left: 6%;
     }
     img:nth-child(6) {
-        top: 2%;
+        top: 110px;
         left: 62%;
-        display: none;
     }
     img:nth-child(7) {
-        top: 2%;
+        top: 80px;
         left: 68%;
     }
     img:nth-child(8) {
-        top: 3%;
+        top: 180px;
         left: 82%;
     }
     img:nth-child(9) {
-        top: 2%;
+        top: 150px;
         left: 88%;
     }
     img:nth-child(10) {
-        top: 1%;
+        top: 110px;
         left: 94%;
     }
 }
@@ -192,7 +191,7 @@
     #moon-img {
         position: absolute;
         max-width: 200px;
-        top: 6%;
+        top: 200px;
         left: -200px;
         animation: moon-anim 25s infinite;
         z-index: 2;
