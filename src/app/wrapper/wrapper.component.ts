@@ -11,7 +11,7 @@ export class WrapperComponent implements OnInit {
 
   }
 
-  bgImgLink: string = "url('assets\Images\main-background-lunara.png')";
+
 
 
 
