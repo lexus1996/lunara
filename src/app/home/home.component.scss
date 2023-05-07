@@ -36,9 +36,9 @@
     }
     
     .first-section {
-        background-image: url("background-first-section.jpg");
-        background-size: cover;
-        background-position: center;
+        position: relative;
+        background-image: url("home-first-section-bg-lunara-mobile.png");
+        background-color: var(--dark-black);
         background-repeat: no-repeat;
     }
     
@@ -283,6 +283,11 @@
     /*Desktop queries*/
     
     @media (min-width: 768px) {
+        .first-section {
+            background-image: url("home-first-section-bg-lunara.png");
+            background-color: var(--dark-black);
+            background-repeat: no-repeat;
+        }
         .third-section {
             display: flex;
             justify-content: center;
