@@ -47,6 +47,22 @@ h4 {
     margin: 10px auto;
 }
 
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
 
 /* width */
 
@@ -184,6 +200,73 @@ body {
     height: 80px;
     background-color: var(--dark-black);
     clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0 50%);
+}
+
+.main-btn {
+    background-color: #06080a00;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #11111100;
+    border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+    border-radius: 25px;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    position: relative;
+    transition: .7s all;
+    text-transform: uppercase;
+    animation: box-glow 5s infinite;
+}
+
+.main-btn::before {
+    content: '';
+    background-color: var(--yellow);
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .7s all;
+}
+
+.main-btn::after {
+    content: '';
+    background-color: var(--yellow);
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .7s all;
+}
+
+.main-btn:hover {
+    color: var(--yellow);
+    border-left-color: var(--yellow);
+    border-right-color: var(--yellow);
+}
+
+.main-btn:hover::before {
+    left: -40px;
+}
+
+.main-btn:hover::after {
+    right: -40px;
+}
+
+@keyframes box-glow {
+    0% {
+        box-shadow: 5px 5px 25px 5px #ffe60100;
+    }
+    50% {
+        box-shadow: 5px 5px 25px 5px #ffe60133;
+    }
+    100% {
+        box-shadow: 0px 0px 25px 5px #ffe60100;
+    }
 }
 
 @media (min-width: 768px) {

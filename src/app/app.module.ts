@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { ServicesPageComponent } from './services-page/services-page.component';
 import { MenuComponent } from './wrapper/header/menu/menu.component';
 import { OpenCloseComponent } from './open-close/open-close.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { OpenCloseComponent } from './open-close/open-close.component';
     ServicesPageComponent,
     MenuComponent,
     OpenCloseComponent,
+    ComingSoonComponent,
 
   ],
   imports: [
