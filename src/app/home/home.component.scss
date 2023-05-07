@@ -65,7 +65,7 @@
     .two-col-container {
         flex-direction: column-reverse;
         border-bottom: 2px solid #fff;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
     h1 {
         text-align: center;
@@ -221,13 +221,6 @@
         transform: translateY(-100%);
     }
     .fourth-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        min-height: 70vh;
-        padding: 40px 25px;
-        background-color: var(--dark-black);
         .two-col-container {
             flex-direction: row;
             border-bottom: none;
