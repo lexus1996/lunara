@@ -40,6 +40,7 @@
         background-image: url("home-first-section-bg-lunara-mobile.png");
         background-color: var(--dark-black);
         background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .special-section {
@@ -287,6 +288,7 @@
             background-image: url("home-first-section-bg-lunara.png");
             background-color: var(--dark-black);
             background-repeat: no-repeat;
+            background-size: cover;
         }
         .third-section {
             display: flex;
@@ -328,6 +330,7 @@
             transform: translateY(-100%);
         }
         .fourth-section {
+            margin-top: -40px;
             .two-col-container {
                 flex-direction: row;
             }
@@ -399,5 +402,14 @@
                 justify-content: center;
                 align-items: center;
             }
+        }
+    }
+    
+    @media (min-width: 3600px) {
+        .first-section {
+            background-image: url("home-first-section-bg-lunara.png");
+            background-color: var(--dark-black);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
