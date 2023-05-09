@@ -7,7 +7,8 @@
         padding: 25px;
         background-image: url("main-background-lunara.png");
         background-size: cover;
-        background-position: 50% 50%;
+        background-position: bottom;
+        background-attachment: fixed;
         h1,
         h2,
         p {
