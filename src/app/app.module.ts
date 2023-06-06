@@ -15,6 +15,8 @@ import { MenuComponent } from './wrapper/header/menu/menu.component';
 import { OpenCloseComponent } from './open-close/open-close.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { BrandingComponent } from './services-page/branding/branding.component';
+import { DevelopmentComponent } from './services-page/development/development.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     OpenCloseComponent,
     ComingSoonComponent,
     PortfolioComponent,
+    BrandingComponent,
+    DevelopmentComponent,
 
   ],
   imports: [
